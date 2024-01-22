@@ -1,0 +1,142 @@
+html {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 26px;
+}
+h5 {
+    font-size: 16px;
+}
+
+/* Fixed navigation header */
+.nav {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: black;
+    opacity: 1;
+}
+.nav img {
+    height: 50px;
+    margin-left: 10px;
+}
+.nav ul {
+    list-style: none;
+}
+.nav li {
+    text-decoration: underline;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Mission statement */
+.missionbox {
+    background-image: url("./images/img-mission-background.jpg");
+    margin: 70px auto 0 auto;
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+}
+.missiontext {
+    text-align: center;
+    line-height: 1;
+    background-color: black;
+    opacity: 0.9;
+    width: 1200px;
+}
+
+/* tea of the month */
+.monthbox {
+    margin: 50px auto 0 auto;
+    width: 1200px;
+}
+.monthtext {
+    width: 1200px;
+    text-align: center;
+}
+.monthcards {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    margin: 0 15px;
+}
+.card img {
+    height: 200px;
+    width: 300px;
+}
+.card h4 {
+    margin-top: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Locations */
+.locationsbox {
+    position: relative;
+    margin: 50px auto 0 auto;
+    height: 500px; width: 1200px;
+}
+.locationsbox::before {
+    content: "";
+    position: absolute;
+    background-image: url("./images/img-locations-background.jpg");
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    filter: brightness(0.7);
+}
+.locationsboxinside {
+    position: relative; /* This will make it stock on top of the ::before */
+}
+.locationsboxinside h2 {
+    background-color: transparent;
+    max-width: fit-content;
+    padding-top: 50px;
+    margin: 0 auto 15px auto;
+}
+.locationsflex {
+    display: flex;
+    justify-content: center;
+}
+.detailsbox {
+    background-color: black;
+    height: 300px; width: 300px;
+    margin: 0 20px;
+}
+.detailsbox h3 {
+    padding-top: 40px;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+.detailsbox h4 {
+    max-width: fit-content;
+    margin: 20px auto;
+}
+.footer {
+    width: 1200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+.copyright {
+    margin-left: 20px;
+}
